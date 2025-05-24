@@ -1,5 +1,9 @@
 
 /**
+ * Lista Exercícios 4
+ * 
+ * Exercício 01
+ * 
  * 1) Dados três valores, A, B, C, verificar se eles podem ser valores dos lados de um triângulo
  *    e, se forem, se é um triângulo escaleno, equilátero ou isósceles, considerando os seguintes conceitos:
  * 
