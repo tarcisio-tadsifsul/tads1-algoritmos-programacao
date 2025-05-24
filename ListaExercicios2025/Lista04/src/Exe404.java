@@ -2,7 +2,7 @@
 /**
  * Lista Exercícios 4
  * 
- * Exercício 03
+ * Exercício 04
  * 
  * 4) A empresa XYZ concedeu um bônus de 20% para todos seus funcionários
  * com mais de 5 anos de empresa. E todos os outros receberam uma bonificação de 10%.
