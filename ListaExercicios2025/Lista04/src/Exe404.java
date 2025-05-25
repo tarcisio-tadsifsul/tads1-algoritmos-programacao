@@ -46,6 +46,6 @@ public class Exe404 {
             valorBonus = salario * percBonus;
         }
 
-        System.out.printf("Salario + Bonificação  = R$%.2f", salario + valorBonus);
+        System.out.printf("Salario + Bonificação = R$%.2f", salario + valorBonus);
     }
 }

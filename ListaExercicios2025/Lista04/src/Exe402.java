@@ -37,23 +37,19 @@ public class Exe402 {
         } else if (menuFrutas == 3) {
             valorKg = 5.85f;
         } else {
-            System.out.println("Opção inválida! Encerrando programa.");
+            System.out.println("Produto inexitente! Encerrando programa.");
             sc.close();
             return;
         }
-
         System.out.print("Quantos quilos você quer? ");
         qtdFruta = sc.nextFloat();
+        sc.close();
         if (qtdFruta > 0) {
             totalPagar = qtdFruta * valorKg;
         } else {
             System.out.println("Quantidade inválida! Encerrando programa.");
-            sc.close();
             return;
         }
-
         System.out.printf("Total a Pagar: R$%.2f", totalPagar);
-
-        sc.close();
     }
 }

@@ -42,7 +42,6 @@ public class Exe403 {
             System.out.print("Digite uma das opções: ");
             tipoComb = sc.next().toUpperCase().charAt(0);
             sc.close();
-
             if (tipoComb == 'A') {
                 // Operado ternário avalia valor de litros para preencher valor de desconto
                 desconto = (litros > 20) ? 0.05f : 0.03f;
@@ -56,15 +55,12 @@ public class Exe403 {
                 System.out.println("Opção inválida! Encerrando programa.");
                 return;
             }
-
         } else {
             // false para litros > 0
             System.out.println("Valor inválido! Encerrando programa.");
             sc.close();
             return;
         }
-
         System.out.printf("\nTotal a pagar: R$%.2f", totalPagar);
-
     }
 }

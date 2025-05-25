@@ -39,7 +39,6 @@ public class Exe401 {
                 System.out.println(
                         "\n Um dos lados é maior que a soma dos outros dois! Não é possível formar um triângulo. \n");
             } else {
-
                 if (a == b && b == c) { // Verificar se é equilátero
                     System.out.println("Triângulo Equilátero!");
                 } else if (a == b || b == c || c == a) { // Verificar se é isosceles
