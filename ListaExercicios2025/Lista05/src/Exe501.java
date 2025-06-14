@@ -1,5 +1,7 @@
 
 /**
+ * Lista 05 - Switch
+ * 
  * 1) Escreva um programa que leia o código de um determinado produto
  *    e mostre a sua classificação. Utilize a tabela abaixo como referência.
  * 
