@@ -17,6 +17,7 @@ public class Exe502 {
         System.out.print("\n--- Consoante ou Vogal ---\n\n");
         System.out.print("Digite uma letra: ");
         letra = sc.next().toLowerCase().charAt(0);
+        sc.close();
 
         switch (letra) {
             case 'a':
