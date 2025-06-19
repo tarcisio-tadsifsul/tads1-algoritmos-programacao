@@ -13,12 +13,14 @@ import java.util.Scanner;
 
 public class Exe512 {
     public static void main(String[] args) {
+        // Inicia atribuições e variáveis
         Scanner sc = new Scanner(System.in);
         int quant = 0;
         float precoUnit = 0f, valorTotal = 0f;
         String itemNome = "", op = "123";
         char itemMenu;
 
+        // Exibe o menu e lê a opção do usuário
         System.out.println("\n--- PROCESSAMENTO DE PEDIDO ---");
         System.out.print("\nMENU PRODUTOS ------------"
                 + "\n[1] Camisetas....R$ 49,99"
@@ -26,12 +28,16 @@ public class Exe512 {
                 + "\n[3] Tênis........R$129,99"
                 + "\n\nEscolha uma opção: ");
         itemMenu = sc.next().charAt(0);
+
+        // Verifica se a opção é válida
         if (op.indexOf(itemMenu) == -1) {
             System.out.println("[ERRO - Opção inválida] Encerrando programa.");
             System.exit(0);
         }
 
+        // Lê a quantidade do item
         System.out.print("Quantidade do item: ");
+        // Verifica se a entrada é um número inteiro
         if (sc.hasNextInt()) {
             quant = sc.nextInt();
         } else {
@@ -39,8 +45,10 @@ public class Exe512 {
             System.exit(0);
         }
 
+        // Fecha o scanner
         sc.close();
 
+        // Determina o nome do item e o preço unitário com base na opção escolhida
         switch (itemMenu) {
             case '1':
                 itemNome = quant > 1 ? "Camisetas" : "Camiseta";
@@ -60,8 +68,10 @@ public class Exe512 {
                 break;
         }
 
+        // Calcula o valor total do pedido
         valorTotal = quant * precoUnit;
 
+        // Exibe o resumo do pedido
         System.out.println("\nRESUMO PEDIDO -------------");
         System.out.printf("Produto:          %s", itemNome);
         System.out.printf("\nQuantidade:       %d", quant);
