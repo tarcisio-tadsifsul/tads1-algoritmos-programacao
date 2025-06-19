@@ -19,9 +19,8 @@ public class Exe509 {
         Scanner sc = new Scanner(System.in);
         int tipoConversao, conversao;
         float unidIni, unidFim;
-        String nomeConversao;
 
-        System.out.println("\n--- CONVERSÃO UNIDADES BASICAS ---\n");
+        System.out.println("\n--- CONVERSÃO UNIDADES BASICAS ---");
         System.out.print("\nTipos de Conversão:"
                 + "\n [1] Comprimento"
                 + "\n [2] Massa"
