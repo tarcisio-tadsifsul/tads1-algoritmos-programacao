@@ -1,3 +1,4 @@
+
 /**
  * Lista 05 - Switch
  * 
@@ -14,10 +15,10 @@
  * 
  */
 
-
 import java.util.Scanner;
+
 public class Exe507 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int mes, dia;
         String estacao = "", nomeMes = "";
@@ -44,7 +45,7 @@ public class Exe507 {
             case 4:
                 nomeMes = "Abril";
                 break;
-            case 5:        
+            case 5:
                 nomeMes = "Maio";
                 break;
             case 6:
@@ -71,21 +72,21 @@ public class Exe507 {
             default:
                 break;
         }
-        
+
         // Verifica se o mês é válido
-        if (dia == 31 && (mes == 4 || mes == 6 || mes == 9 || mes == 11)){
-            System.out.println("\nO mês "+ mes +" possui apenas 31 dias.\nEncerrando o programa.");
+        if (dia == 31 && (mes == 4 || mes == 6 || mes == 9 || mes == 11)) {
+            System.out.println("\nO mês " + mes + " possui apenas 30 dias.\nEncerrando o programa.");
             System.exit(0);
 
-        // Verifica se o mês é fevereiro
-        } else if(mes == 2 && (dia == 29 || dia == 30 || dia == 31)){
+            // Verifica se o mês é fevereiro
+        } else if (mes == 2 && (dia == 29 || dia == 30 || dia == 31)) {
             System.out.println("\nFevereiro possui apenas 28 dias.\nEncerrando o programa.");
             System.exit(0);
 
-        // Verifica se o dia é válido
-        } else if (dia > 0 && dia <= 31){
+            // Verifica se o dia é válido
+        } else if (dia > 0 && dia <= 31) {
             // Verifica a estação do ano
-            switch (mes){
+            switch (mes) {
                 case 1:
                 case 2:
                     estacao = "Verão";
