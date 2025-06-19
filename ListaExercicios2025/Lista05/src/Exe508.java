@@ -56,6 +56,8 @@ public class Exe508 {
                 case '0':
                     System.out.println("Você digitou o número '" + caracter + "'.");
                     break;
+                default:
+                    break;
             }
             // Retorna msg outro caracter
         } else {
