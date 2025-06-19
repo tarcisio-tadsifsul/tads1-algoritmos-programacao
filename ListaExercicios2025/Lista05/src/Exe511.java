@@ -4,7 +4,7 @@
  * 
  * 11) Crie um jogo simples de "Pedra, Papel, Tesoura" contra o computador.
  * O usuário escolhe uma opção (1 para Pedra, 2 para Papel, 3 para Tesoura)
- * e ocomputador gera uma escolha aleatória. Utilize `switch` para determinar o vencedor.
+ * e o computador gera uma escolha aleatória. Utilize `switch` para determinar o vencedor.
  * 
  */
 import java.util.Scanner;
@@ -18,7 +18,7 @@ public class Exe511 {
         System.out.print("\nEscolha o primeiro movimento:"
                 + "\n [1] Pedra"
                 + "\n [2] Papel"
-                + "\n [1] Tesoura"
+                + "\n [3] Tesoura"
                 + "\n\n Escolha uma opção: ");
         userMov = sc.nextInt();
         sc.close();
