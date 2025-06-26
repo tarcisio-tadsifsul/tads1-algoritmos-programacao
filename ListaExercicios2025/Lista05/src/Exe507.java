@@ -136,7 +136,6 @@ public class Exe507 {
                     System.exit(0);
                     break;
             }
-
         } else {
             System.out.println("Dia inválido.\nEncerrando o programa.");
             System.exit(0);
