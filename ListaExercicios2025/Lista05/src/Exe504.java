@@ -25,14 +25,16 @@ public class Exe504 {
 
         System.out.println("\n--- OPERAÇÃO MATEMÁTICA BÁSICA ---");
         System.out.println("\nInforme dois números: ");
-        System.out.print("A: ");
+        System.out.print("\nN1: ");
         n1 = sc.nextFloat();
-        System.out.print("B: ");
-        n2 = sc.nextFloat();
-
-        System.out.println("Qual operação você quer fazer? [+] [-] [/] [*] ");
+        
+        System.out.println("Escolha Operação: [+] [-] [/] [*] ");
         System.out.print("Operação: ");
         op = sc.next().charAt(0);
+        
+        System.out.print("N2: ");
+        n2 = sc.nextFloat();
+
         sc.close();
 
         switch (op) {
@@ -43,17 +45,26 @@ public class Exe504 {
                 result = (float) n1 - n2;
                 break;
             case '/':
-                result = (float) n1 / n2;
+                if (n2 != 0){
+                    result = (float) n1 / n2;
+                } else {
+                    System.out.println("Erro! Divisão por zero inválida!");
+                    System.out.println("Encerrando programa.");
+                    System.exit(0);
+                break;
+                }
                 break;
             case '*':
                 result = (float) n1 * n2;
                 break;
             default:
                 System.out.println("Operação inválida!");
+                System.out.println("Encerrando programa.");
+                System.exit(0);
                 break;
         }
 
-        System.out.printf("Resultado: %.2f %s %.2f = %.2f", n1, op, n2, result);
+        System.out.printf("Resultado: %.2f %s %.2f = %.2f \n", n1, op, n2, result);
 
     }
 }
