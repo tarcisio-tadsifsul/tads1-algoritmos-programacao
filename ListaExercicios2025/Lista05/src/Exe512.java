@@ -23,9 +23,9 @@ public class Exe512 {
         // Exibe o menu e lê a opção do usuário
         System.out.println("\n--- PROCESSAMENTO DE PEDIDO ---");
         System.out.print("\nMENU PRODUTOS ------------"
-                + "\n[1] Camisetas....R$ 49,99"
-                + "\n[2] Calças.......R$ 69,99"
-                + "\n[3] Tênis........R$129,99"
+                + "\n[1] Camisetas.... R$ 49,99"
+                + "\n[2] Calças....... R$ 69,99"
+                + "\n[3] Tênis........ R$129,99"
                 + "\n\nEscolha uma opção: ");
         itemMenu = sc.next().charAt(0);
 
@@ -73,11 +73,11 @@ public class Exe512 {
 
         // Exibe o resumo do pedido
         System.out.println("\nRESUMO PEDIDO -------------");
-        System.out.printf("Produto:          %s", itemNome);
-        System.out.printf("\nQuantidade:       %d", quant);
-        System.out.printf("\nPreço Unitario:   R$ %.2f", precoUnit);
-        System.out.println("\n---------------------------");
-        System.out.printf("Valor Total:      R$ %.2f", valorTotal);
+        System.out.printf("Produto........... %s", itemNome);
+        System.out.printf("\nPreço Unitario.... R$ %.2f", precoUnit);
+        System.out.printf("\nQuantidade........ %d", quant);
+        System.out.println("\n============================");
+        System.out.printf("Valor Total....... R$ %.2f", valorTotal);
         System.out.println();
     }
 }

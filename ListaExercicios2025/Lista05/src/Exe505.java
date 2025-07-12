@@ -36,13 +36,13 @@ public class Exe505 {
 
         switch (plano) {
             case 'a':
-                percAumento = 1 + (10.0f / 100);
+                percAumento = 1.1f;
                 break;
             case 'b':
-                percAumento = 1 + (15.0f / 100);
+                percAumento = 1.15f;
                 break;
             case 'c':
-                percAumento = 1 + (20.0f / 100);
+                percAumento = 1.2f;
                 break;
             default:
                 System.out.println("Plano informado inválido!");

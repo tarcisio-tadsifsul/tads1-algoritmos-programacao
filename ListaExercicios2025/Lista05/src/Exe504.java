@@ -39,23 +39,22 @@ public class Exe504 {
 
         switch (op) {
             case '+':
-                result = (float) n1 + n2;
+                result = n1 + n2;
                 break;
             case '-':
-                result = (float) n1 - n2;
+                result = n1 - n2;
                 break;
             case '/':
                 if (n2 != 0){
-                    result = (float) n1 / n2;
+                    result = n1 / n2;
                 } else {
                     System.out.println("Erro! Divisão por zero inválida!");
                     System.out.println("Encerrando programa.");
                     System.exit(0);
-                break;
                 }
                 break;
             case '*':
-                result = (float) n1 * n2;
+                result = n1 * n2;
                 break;
             default:
                 System.out.println("Operação inválida!");

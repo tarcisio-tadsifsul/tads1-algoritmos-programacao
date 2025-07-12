@@ -26,7 +26,7 @@ import java.util.Scanner;
 public class Exe506 {
     public static void main(String[] args){
         int id, quant;
-        float preco = 0, totalPedido = 0;
+        float preco = 0.0f, totalPedido = 0.0f;
         String produto = "";
         Scanner sc = new Scanner(System.in);
 

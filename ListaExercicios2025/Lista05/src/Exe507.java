@@ -27,6 +27,13 @@ public class Exe507 {
 
         System.out.print("Informe o dia [1-31]: ");
         dia = sc.nextInt();
+
+        if (dia == 0) {
+            sc.close();
+            System.out.println("Dia inválido!\nEncerrando programa.");
+            System.exit(0);
+        }
+
         System.out.print("Informe o mês [1-12]: ");
         mes = sc.nextInt();
         sc.close();

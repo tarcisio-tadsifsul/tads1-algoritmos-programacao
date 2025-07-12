@@ -7,12 +7,14 @@
  * e o computador gera uma escolha aleatória. Utilize `switch` para determinar o vencedor.
  * 
  */
+//import java.util.Random;
 import java.util.Scanner;
 
 public class Exe511 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int userMov, compMov;
+        //Random randon = new Random();
 
         System.out.println("\n--- PEDRA, PAPEL E TESOURA ---");
         System.out.print("\nEscolha o primeiro movimento:"
@@ -23,8 +25,15 @@ public class Exe511 {
         userMov = sc.nextInt();
         sc.close();
 
+        if (userMov < 1 || userMov > 3) {
+            System.out.println("Escolha inválida");
+            return;
+        }
+
         // Gera movimento aleatório do computador
         compMov = (int) (Math.random() * (4 - 1)) + 1;
+        // random = random.nextInte(3) + 1;
+        3
 
         // Verificar o movimento do usuário
         switch (userMov) {
