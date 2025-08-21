@@ -33,7 +33,6 @@ public class Exe511 {
         // Gera movimento aleatório do computador
         compMov = (int) (Math.random() * (4 - 1)) + 1;
         // random = random.nextInte(3) + 1;
-        3
 
         // Verificar o movimento do usuário
         switch (userMov) {
