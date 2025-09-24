@@ -6,7 +6,7 @@
 
 public class Exe609 {
     public static void main(String[] args) {
-        int i = 0;
+        byte i = 0;
         System.out.println("\nCoordenadas:");
         while (i < 6) {
             System.out.printf("(%d,%d) ", i/2, i%2);
@@ -15,3 +15,16 @@ public class Exe609 {
         System.out.println("\n");
     }
 }
+
+// Forma com while dentro de while
+/* int x = 0, y = 0;
+        System.out.println("\nCoordenadas:");
+        while (x <= 2) {
+            y = 0;
+            while (y < 2) {
+                System.out.print("("+ x +","+ y +") ");
+                y++;
+            }
+            x++;
+        }
+        System.out.println("\n"); */

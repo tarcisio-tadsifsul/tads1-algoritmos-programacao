@@ -10,15 +10,15 @@ public class Exe610 {
     public static void main(String[] args) {
         System.out.println("\n");
         int i = 1, soma = 0;
-        while (i < 29) {
-            soma = soma + i;
+        while (soma <= 28) {
+            soma += i; // soma = soma + i
             System.out.println(i + " " + soma);
             if (soma == 28){
                 break;
             }
             i++;
         }
-        System.out.println("O Laço executou "+i+" vezes para soma chegar a "+soma+"!");
+        System.out.println("Laço executou "+i+" vezes para soma chegar a "+soma+"!");
         System.out.println("\n");
     }
 }

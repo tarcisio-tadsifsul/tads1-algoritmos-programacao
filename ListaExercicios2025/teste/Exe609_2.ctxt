@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Exe609_2
+comment0.text=\n\ Lista\ 06\ -\ Exe609\n\ Construa\ um\ la\u00E7o\ de\ repeti\u00E7\u00E3o\ com\ while\ que\ imprima\n\ a\ seguinte\ sequ\u00EAncia\ de\ coordenadas\:\ (0,0)\ (0,1)\ (1,0)\ (1,1)\ (2,0)\ (2,1).\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
