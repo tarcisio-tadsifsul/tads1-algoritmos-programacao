@@ -5,10 +5,10 @@
  */
 
 public class Exe608 {
-    public static void main(String[] arg){
+    public static void main(String[] arg) {
         int i = 1;
         while (i <= 30) {
-            if (i == 21){
+            if (i == 21) {
                 System.out.println(i);
                 break;
             }
