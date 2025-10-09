@@ -14,12 +14,13 @@ public class L2_Exe606 {
     public static void main(String[] args) {
         int acc = 0, x = 0, y = 1;
 
-        while (acc < 10) {
-            System.out.print(x + ", " + y + ", ");
+        while (acc < 5) {
+            System.out.print(x + ", " + y + (acc == 4 ? "" : ", "));
             x = x + y;
             y = x + y;
 
             acc++;
         }
+        System.out.println();
     }
 }
