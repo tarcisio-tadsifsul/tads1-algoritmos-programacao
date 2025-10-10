@@ -16,9 +16,7 @@ public class L2_Exe608 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int menu = 0;
-        String nome = "", sobrenome = "", cpf = "";
-        String nome_fant = "", razao_social = "", cnpj = "";
-        String email = "", data = "";
+        String nome1 = "", nome2 = "", id = "", email = "", data = "";
 
         String listaMenu = "\nMENU SISTEMA:"
                             + "\n[1] Cadastrar Cliente"
@@ -39,10 +37,10 @@ public class L2_Exe608 {
                     System.out.print("\n[Cadastrar Cliente]");
 
                     System.out.print("\nNome: ");
-                    nome = sc.nextLine();
+                    nome1 = sc.nextLine();
 
                     System.out.print("Sobrenome: ");
-                    sobrenome = sc.nextLine();
+                    nome2 = sc.nextLine();
 
                     System.out.print("email: ");
                     email = sc.nextLine();
@@ -51,23 +49,23 @@ public class L2_Exe608 {
                     data = sc.nextLine();
 
                     System.out.print("CPF: ");
-                    cpf = sc.nextLine();
+                    id = sc.nextLine();
 
-                    System.out.println("\nNome: " + nome
-                    + "\nSobrenome: " + sobrenome
+                    System.out.println("\nNome: " + nome1
+                    + "\nSobrenome: " + nome2
                     + "\nEmail: " + email
-                    + "\nData "+ (menu == 1 ? "Nascimento" : "Admissão") + ": " + data  
-                    + "\nCPF: " + cpf);
+                    + "\nData Nascimento: " + data  
+                    + "\nCPF: " + id);
                     
                     break;
                 case 2:
                     System.out.println("\n[Cadastrar Funcionário]\n");
 
                     System.out.print("Nome: ");
-                    nome = sc.nextLine();
+                    nome1 = sc.nextLine();
 
                     System.out.print("Sobrenome: ");
-                    sobrenome = sc.nextLine();
+                    nome2 = sc.nextLine();
 
                     System.out.print("email: ");
                     email = sc.nextLine();
@@ -76,23 +74,23 @@ public class L2_Exe608 {
                     data = sc.nextLine();
 
                     System.out.print("CPF: ");
-                    cpf = sc.nextLine();
+                    id = sc.nextLine();
                     
-                    System.out.println("\nNome: " + nome
-                    + "\nSobrenome: " + sobrenome
+                    System.out.println("\nNome: " + nome1
+                    + "\nSobrenome: " + nome2
                     + "\nEmail: " + email
-                    + "\nData "+ (menu == 1 ? "Nascimento" : "Admissão") + ": " + data  
-                    + "\nCPF: " + cpf);
+                    + "\nData Admissão: " + data  
+                    + "\nCPF: " + id);
 
                     break;
                 case 3:
                     System.out.println("\n[Cadastrar Fornecedor]\n");
 
                     System.out.print("Nome Fantasia: ");
-                    nome_fant = sc.nextLine();
+                    nome1 = sc.nextLine();
 
                     System.out.print("Razão Social: ");
-                    razao_social = sc.nextLine();
+                    nome2 = sc.nextLine();
 
                     System.out.print("email: ");
                     email = sc.nextLine();
@@ -101,23 +99,23 @@ public class L2_Exe608 {
                     data = sc.nextLine();
 
                     System.out.print("CNPJ: ");
-                    cnpj = sc.nextLine();
+                    id = sc.nextLine();
                     
-                    System.out.println("\nNome Fantasia: " + nome_fant
-                     + "\nRazão Social: " + razao_social
+                    System.out.println("\nNome Fantasia: " + nome1
+                     + "\nRazão Social: " + nome2
                      + "\nEmail: " + email
                      + "\nData Cadastro: " + data 
-                     + "\nCNPJ: " + cnpj);
+                     + "\nCNPJ: " + id);
 
                     break;
                 case 4:
                     System.out.println("\n[Cadastrar Transportadora]\n");
 
                     System.out.print("Nome Fantasia: ");
-                    nome_fant = sc.nextLine();
+                    nome1 = sc.nextLine();
 
                     System.out.print("Razão Social: ");
-                    razao_social = sc.nextLine();
+                    nome2 = sc.nextLine();
 
                     System.out.print("email: ");
                     email = sc.nextLine();
@@ -126,13 +124,13 @@ public class L2_Exe608 {
                     data = sc.nextLine();
 
                     System.out.print("CNPJ: ");
-                    cnpj = sc.nextLine();  
+                    id = sc.nextLine();  
 
-                    System.out.println("\nNome Fantasia: " + nome_fant
-                     + "\nRazão Social: " + razao_social
+                    System.out.println("\nNome Fantasia: " + nome1
+                     + "\nRazão Social: " + nome2
                      + "\nEmail: " + email
                      + "\nData Cadastro: " + data 
-                     + "\nCNPJ: " + cnpj);
+                     + "\nCNPJ: " + id);
 
                     break;
                 case 5:
