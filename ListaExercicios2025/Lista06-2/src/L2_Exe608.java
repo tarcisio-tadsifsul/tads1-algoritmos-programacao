@@ -19,7 +19,6 @@ public class L2_Exe608 {
         String nome = "", sobrenome = "", cpf = "";
         String nome_fant = "", razao_social = "", cnpj = "";
         String email = "", data = "";
-        String dadosPF = "", dadosPJ = "";
 
         String listaMenu = "\nMENU SISTEMA:"
                             + "\n[1] Cadastrar Cliente"
@@ -54,7 +53,7 @@ public class L2_Exe608 {
                     System.out.print("CPF: ");
                     cpf = sc.nextLine();
 
-                    System.out.println("\n\nNome: " + nome
+                    System.out.println("\nNome: " + nome
                     + "\nSobrenome: " + sobrenome
                     + "\nEmail: " + email
                     + "\nData "+ (menu == 1 ? "Nascimento" : "Admissão") + ": " + data  
