@@ -17,7 +17,7 @@ public class L2_Exe609 {
         Scanner sc = new Scanner(System.in);
         int menu = 0, subMenu = 12;
 
-        String MenuList = "\n\n\n-MENU"
+        String MenuList = "\n\n-MENU"
                       + "\n[1] Consultas: Saldo, extrato, limite"
                       + "\n[2] Transferências: Contas próprias ou de terceiros, TEDs, DOCs, Pix"
                       + "\n[3] Pagamentos: Contas de serviços, boletos, impostos"
