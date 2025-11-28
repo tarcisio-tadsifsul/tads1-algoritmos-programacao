@@ -37,7 +37,7 @@ public class SistemaMedidaCamisetas {
         Scanner sc = new Scanner(System.in);
 
         // Variáveis
-        char s;
+        char s = ' ';
         float largura, comprimento;
 
         // Tabelas de tamanhos
@@ -52,14 +52,22 @@ public class SistemaMedidaCamisetas {
         System.out.println("| Informe seus dados para confecção da Camiseta\n");
 
         // Entrada do sexo
-        System.out.println("| Qual o gênero da confecção?");
-        System.out.println("| [M] Masculino");
-        System.out.println("| [F] Feminino");
-        System.out.print("| Digite: ");
-        s = sc.next().toLowerCase().charAt(0);
+        while(true){
+            if (s != 'm' && s != 'f'){
+                System.out.println("\n[ERRO] Informe 'M' ou 'F' para gênero!\n");
+            } else {
+                break;
+            }
+            System.out.println("| Qual o gênero da confecção?");
+            System.out.println("| [M] Masculino");
+            System.out.println("| [F] Feminino");
+            System.out.print("| Digite: ");
+            s = sc.next().toLowerCase().charAt(0);
+            
+        }
 
         // Entrada das medidas
-        System.out.println("\n| Informe suas medidas em centímetros:");
+        System.out.println("[OK] \n\n| Informe suas medidas em centímetros:");
         System.out.print("| Largura: ");
         largura = sc.nextFloat();
 
@@ -104,9 +112,9 @@ public class SistemaMedidaCamisetas {
 
         }
         // Sexo inválido
-        else {
+        /* else {
             System.out.println("[ERRO] Informe 'M' ou 'F' para gênero!");
-        }
+        } */
 
         sc.close();
     }

@@ -12,21 +12,21 @@ public class Exe704_vetores {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
         String[] diasSemana = {"Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"};
-        int dia = -1;
+        byte dia = -1;
 
-        System.out.println("Dias da Semana");
+        System.out.println("\n\nDias da Semana\n");
 
         while (dia != 0) {
-            System.out.print("Digite um número de 1 a 7 para ver o dia da semana ou 0 para sair: ");
-            dia = sc.nextInt();
+            System.out.print("Digite de [1 a 7] ou [0 - Sair]: ");
+            dia = sc.nextByte();
             if (dia == 0) {
                 sc.close();
-                System.out.println("Saindo...");
+                System.out.println("Saindo...\n");
                 break;
             } else if (dia < 0 || dia > 7){
                 System.out.println("Erro: valor inválido!");
             } else {
-                System.out.println("O dia correspondente é: " + diasSemana[dia - 1]);
+                System.out.println("O dia correspondente é: " + diasSemana[dia - 1]+"\n");
             }
         }
     }
